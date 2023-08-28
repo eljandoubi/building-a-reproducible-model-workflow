@@ -1,0 +1,9 @@
+name: exercise_3
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - requests
+  - mlflow
+  - hydra-core
+  - wandb

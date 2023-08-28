@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-08-27T20:27:50.973775",
+    "startedAt": "2023-08-27T20:27:48.888679",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/a/.local/share/jupyter/runtime/kernel-23a21bf5-c700-447d-822c-ce867dc9181e.json"
+    ],
+    "state": "running",
+    "program": "Untitled.ipynb",
+    "root": "/home/a/cd0581-building-a-reproducible-model-workflow-exercises",
+    "git": {
+        "remote": "https://github.com/udacity/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "f8ceef1ef5f8d5e8ac5995dbf09d0c6d8be15827"
+    },
+    "email": "abdelkarim.eljandoubi@ensta-paris.fr",
+    "host": "ABDELKARIM",
+    "username": "a",
+    "executable": "/home/a/anaconda3/envs/mlflow-710f954395b28a46684169f29295d4d264b1a22b/bin/python"
+}

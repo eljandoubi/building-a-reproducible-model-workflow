@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/mlruns/0/2d168efa785f46bbb6c82a34c2c0e5ed/artifacts
+end_time: 1693008028987
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2d168efa785f46bbb6c82a34c2c0e5ed
+run_name: suave-ray-502
+run_uuid: 2d168efa785f46bbb6c82a34c2c0e5ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693007875483
+status: 3
+tags: []
+user_id: a

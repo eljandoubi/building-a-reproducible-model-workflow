@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/8a21c48fa9fb4a168368475e1b7cb5a3/artifacts
+end_time: 1693089670325
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8a21c48fa9fb4a168368475e1b7cb5a3
+run_name: skillful-rat-819
+run_uuid: 8a21c48fa9fb4a168368475e1b7cb5a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693089194136
+status: 3
+tags: []
+user_id: a

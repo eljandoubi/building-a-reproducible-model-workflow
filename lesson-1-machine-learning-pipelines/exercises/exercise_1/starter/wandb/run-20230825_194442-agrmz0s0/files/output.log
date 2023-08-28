@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "upload_artifact.py", line 71, in <module>
+    go(args)
+  File "upload_artifact.py", line 33, in go
+    description=args.artifact_desc,
+AttributeError: 'Namespace' object has no attribute 'artifact_desc'

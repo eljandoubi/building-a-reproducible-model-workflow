@@ -1,0 +1,212 @@
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+index cb43d39..7cd423f 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+@@ -16,6 +16,8 @@ def go(args):
+     # Create a W&B run in the project ``exercise_1``. Set the option ``job_type="upload_file"``:
+ 
+     # YOUR CODE HERE
++    
++    run = wandb.init(project="exercise_1", job_type="upload_file")
+ 
+     # Create an instance of the class ``wandb.Artifact``. Use the ``artifact_name`` parameter to fill
+     # the keyword ``name`` when constructing the wandb.Artifact class.
+@@ -24,11 +26,20 @@ def go(args):
+     # HINT: you can use args.artifact_name to reference the parameter artifact_name
+ 
+     # YOUR CODE HERE
+-
++    
++    artifact = wandb.Artifact(
++        name=args.artifact_name,
++        type=args.artifact_type,
++        description=args.artifact_description,
++        )
++    
+     # Attach the file provided as the parameter ``input_file`` to the artifact instance using
+     # ``artifact.add_file``, and log the artifact to the run using ``run.log_artifact``.
+ 
+     # YOUR CODE HERE
++    
++    artifact.add_file(args.input_file)
++    run.log_artifact(artifact)
+ 
+ 
+ if __name__ == "__main__":
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
+index f455e13..5da4aca 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
+@@ -18,7 +18,8 @@ def go(args):
+ 
+     # YOUR CODE HERE: get the artifact and store its local path in the variable "artifact_path"
+     # HINT: you can get the artifact path by using the "file()" method
+-
++    
++    artifact = run.use_artifact(args.artifact_name)
+     artifact_path = artifact.file()
+ 
+     logger.info("Artifact content:")
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
+index 634c12b..3836cd7 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
+@@ -19,3 +19,5 @@ Although never is often better than *right* now.
+ If the implementation is hard to explain, it's a bad idea.
+ If the implementation is easy to explain, it may be a good idea.
+ Namespaces are one honking great idea -- let's do more of those!
++
++The first change
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml
+index b735436..b1af9b6 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml
+@@ -3,4 +3,7 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  # Complete HERE
++  - requests
++  - mlflow
++  - hydra-core
++  - wandb
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml
+index 42cd9c8..d610674 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml
+@@ -3,7 +3,5 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  - requests=2.24.0
+-  - pip=20.3.3
+-  - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++  - requests
++  - wandb
+\ No newline at end of file
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py
+index 47fba9e..4af89b3 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py
+@@ -15,7 +15,7 @@ def go(config: DictConfig):
+     # You can get the path at the root of the MLflow project with this:
+     root_path = hydra.utils.get_original_cwd()
+ 
+-    _ = mlflow.run(
++    mlflow.run(
+         os.path.join(root_path, "download_data"),
+         "main",
+         parameters={
+@@ -33,6 +33,16 @@ def go(config: DictConfig):
+     # to the "process_data" component
+     ##################
+ 
++    mlflow.run(
++        os.path.join(root_path, "process_data"),
++        "main",
++        parameters={
++            "input_artifact": "iris.csv:latest",
++            "artifact_name": "clean_data.csv",
++            "artifact_type": "processed_data",
++            "artifact_description": "Cleaned data"
++        },
++    )
+ 
+ 
+ if __name__ == "__main__":
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml
+index 09811f0..2e92a2e 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml
+@@ -3,12 +3,10 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  - requests=2.24.0
+-  - pip=20.3.3
+-  - seaborn=0.11.1
+-  - pandas=1.2.3
+-  - scikit-learn=0.24.1
+-  - matplotlib==3.2.2
+-  - pillow=8.1.2
+-  - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++  - requests
++  - seaborn
++  - pandas
++  - scikit-learn
++  - matplotlib
++  - pillow
++  - wandb
+\ No newline at end of file
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+index e69de29..76d171a 100644
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+@@ -0,0 +1,7 @@
++name: download_data
++conda_env: conda.yml
++
++entry_points:
++  main:
++    command: >-
++      jupyter lab
+\ No newline at end of file
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+index f216511..01bd736 100644
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+@@ -1,13 +1,15 @@
+-name: download_data
+-channels:
+-  - conda-forge
+-  - defaults
+-dependencies:
+-  - jupyterlab=3.0.12
+-  - seaborn=0.11.1
+-  - pandas=1.2.3
+-  - pip=20.3.3
+-  - pandas-profiling=2.11.0
+-  - pyarrow=2.0
+-  - pip:
++name: download_data
++channels:
++  - conda-forge
++  - defaults
++dependencies:
++  - protobuf=3.13.0
++  - jupyterlab=3.0.12
++  - seaborn=0.11.1
++  - pandas=1.2.3
++  - pip=20.3.3
++  - jinja2=2.11.2
++  - pandas-profiling=2.11.0
++  - pyarrow=2.0
++  - pip:
+       - wandb==0.10.21
+\ No newline at end of file
+diff --git a/lesson-3-data-validation/exercises/exercise_7/starter/test_data.py b/lesson-3-data-validation/exercises/exercise_7/starter/test_data.py
+index 8075e49..27b57ae 100644
+--- a/lesson-3-data-validation/exercises/exercise_7/starter/test_data.py
++++ b/lesson-3-data-validation/exercises/exercise_7/starter/test_data.py
+@@ -72,6 +72,8 @@ def test_class_names(data):
+     # HINT: you can use the .isin method of pandas, and .all to check that the condition
+     # is true for every row. For example, df['one'].isin(['a','b','c']).all() is True if
+     # all values in column "one" are contained in the list 'a', 'b', 'c'
++    
++    assert data["genre"].isin(known_classes).all(), f"genre is not in {known_classes}"
+ 
+ 
+ def test_column_ranges(data):
+@@ -95,4 +97,7 @@ def test_column_ranges(data):
+         # YOUR CODE HERE: check that the values in the column col_name are within the expected range
+         # HINT: look at the .between method of pandas, and then use .all() like in the previous
+         # test
+-        pass
++        assert data[col_name].dropna().between(minimum, maximum).all(), (
++            f"Column {col_name} failed the test. Should be between {minimum} and {maximum}, "
++            f"instead min={data[col_name].min()} and max={data[col_name].max()}"
++        )

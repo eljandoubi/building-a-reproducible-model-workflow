@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/mlruns/0/77470ec6f7de4f90afbd6ed74ca0ec02/artifacts
+end_time: 1693176764542
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 77470ec6f7de4f90afbd6ed74ca0ec02
+run_name: auspicious-worm-496
+run_uuid: 77470ec6f7de4f90afbd6ed74ca0ec02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693176700794
+status: 3
+tags: []
+user_id: a

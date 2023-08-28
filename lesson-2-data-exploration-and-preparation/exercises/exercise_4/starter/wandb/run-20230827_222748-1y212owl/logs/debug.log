@@ -1,0 +1,53 @@
+2023-08-27 22:27:48,890 INFO    MainThread:3417 [wandb_setup.py:_flush():69] setting env: {}
+2023-08-27 22:27:48,890 INFO    MainThread:3417 [wandb_setup.py:_flush():69] setting login settings: {}
+2023-08-27 22:27:48,890 INFO    MainThread:3417 [wandb_init.py:_log_setup():334] Logging user logs to /home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20230827_222748-1y212owl/logs/debug.log
+2023-08-27 22:27:48,891 INFO    MainThread:3417 [wandb_init.py:_log_setup():335] Logging internal logs to /home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20230827_222748-1y212owl/logs/debug-internal.log
+2023-08-27 22:27:48,891 INFO    MainThread:3417 [wandb_init.py:_jupyter_setup():285] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f55083084f0>
+2023-08-27 22:27:48,891 INFO    MainThread:3417 [wandb_init.py:init():367] calling init triggers
+2023-08-27 22:27:48,891 INFO    MainThread:3417 [wandb_init.py:init():372] wandb.init called with sweep_config: {}
+config: {}
+2023-08-27 22:27:48,891 INFO    MainThread:3417 [wandb_init.py:init():416] starting backend
+2023-08-27 22:27:48,891 INFO    MainThread:3417 [backend.py:_multiprocessing_setup():69] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-08-27 22:27:48,895 INFO    MainThread:3417 [backend.py:ensure_launched():123] starting backend process...
+2023-08-27 22:27:48,900 INFO    MainThread:3417 [backend.py:ensure_launched():127] started backend process with pid: 3453
+2023-08-27 22:27:48,901 INFO    MainThread:3417 [wandb_init.py:init():421] backend started and connected
+2023-08-27 22:27:48,905 INFO    MainThread:3417 [wandb_init.py:init():461] updated telemetry
+2023-08-27 22:27:48,906 INFO    MainThread:3417 [wandb_init.py:init():480] communicating current version
+2023-08-27 22:27:49,275 INFO    MainThread:3417 [wandb_init.py:init():485] got version response upgrade_message: "wandb version 0.15.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-08-27 22:27:49,275 INFO    MainThread:3417 [wandb_init.py:init():493] communicating run to backend with 30 second timeout
+2023-08-27 22:27:49,676 INFO    MainThread:3417 [wandb_init.py:init():518] starting run threads in backend
+2023-08-27 22:27:51,210 INFO    MainThread:3417 [wandb_run.py:_console_start():1476] atexit reg
+2023-08-27 22:27:51,211 INFO    MainThread:3417 [wandb_run.py:_redirect():1339] redirect: SettingsConsole.WRAP
+2023-08-27 22:27:51,211 INFO    MainThread:3417 [wandb_run.py:_redirect():1374] Wrapping output streams.
+2023-08-27 22:27:51,211 INFO    MainThread:3417 [wandb_run.py:_redirect():1390] Redirects installed.
+2023-08-27 22:27:51,211 INFO    MainThread:3417 [wandb_init.py:init():542] run started, returning control to user process
+2023-08-27 22:27:51,211 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:27:51,212 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:27:51,411 INFO    MainThread:3417 [wandb_init.py:_pause_backend():251] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f550835e700>
+2023-08-27 22:27:59,709 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:28:00,157 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:28:00,157 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:28:00,353 INFO    MainThread:3417 [wandb_init.py:_pause_backend():251] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f55082f3130>
+2023-08-27 22:28:43,142 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:28:43,582 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:28:43,582 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:28:43,761 INFO    MainThread:3417 [wandb_init.py:_pause_backend():251] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f545a0f48b0>
+2023-08-27 22:29:06,365 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:29:06,392 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:29:06,392 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:29:06,586 INFO    MainThread:3417 [wandb_init.py:_pause_backend():251] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7f545a142100>
+2023-08-27 22:31:37,813 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:31:54,706 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:31:54,707 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:32:49,770 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:32:49,790 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:32:49,790 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:33:03,633 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:33:03,641 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:33:03,641 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:35:10,894 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:35:26,459 INFO    MainThread:3417 [wandb_init.py:_pause_backend():247] pausing backend
+2023-08-27 22:35:26,459 INFO    MainThread:3417 [jupyter.py:save_ipynb():268] looking for notebook: Untitled.ipynb
+2023-08-27 22:35:35,140 INFO    MainThread:3417 [wandb_init.py:_resume_backend():256] resuming backend
+2023-08-27 22:35:35,140 INFO    MainThread:3417 [wandb_run.py:finish():1135] finishing run abdelkarim-eljandoubi/exercise_4/1y212owl

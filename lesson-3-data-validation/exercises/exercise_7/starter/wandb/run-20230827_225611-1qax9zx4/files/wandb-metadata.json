@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.9.17",
+    "heartbeatAt": "2023-08-27T20:56:13.362802",
+    "startedAt": "2023-08-27T20:56:11.408720",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        "."
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/udacity/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "f8ceef1ef5f8d5e8ac5995dbf09d0c6d8be15827"
+    },
+    "email": "abdelkarim.eljandoubi@ensta-paris.fr",
+    "root": "/home/a/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "ABDELKARIM",
+    "username": "a",
+    "executable": "/home/a/anaconda3/envs/mlflow-623ff42c31b737ebfc2df068c188670685dafa06/bin/python"
+}

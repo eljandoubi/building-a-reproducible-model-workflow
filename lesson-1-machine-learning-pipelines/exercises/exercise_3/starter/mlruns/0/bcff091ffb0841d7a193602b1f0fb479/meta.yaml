@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/bcff091ffb0841d7a193602b1f0fb479/artifacts
+end_time: 1693087599747
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bcff091ffb0841d7a193602b1f0fb479
+run_name: upbeat-roo-709
+run_uuid: bcff091ffb0841d7a193602b1f0fb479
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693087447575
+status: 4
+tags: []
+user_id: a

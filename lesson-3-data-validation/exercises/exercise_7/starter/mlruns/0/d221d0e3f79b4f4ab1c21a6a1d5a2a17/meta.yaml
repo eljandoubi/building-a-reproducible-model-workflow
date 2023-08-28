@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_7/starter/mlruns/0/d221d0e3f79b4f4ab1c21a6a1d5a2a17/artifacts
+end_time: 1693169303595
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d221d0e3f79b4f4ab1c21a6a1d5a2a17
+run_name: serious-eel-85
+run_uuid: d221d0e3f79b4f4ab1c21a6a1d5a2a17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693169085615
+status: 4
+tags: []
+user_id: a

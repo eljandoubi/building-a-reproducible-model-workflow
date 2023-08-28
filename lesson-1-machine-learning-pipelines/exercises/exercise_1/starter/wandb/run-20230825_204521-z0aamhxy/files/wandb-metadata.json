@@ -1,0 +1,128 @@
+{
+    "os": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.17",
+    "heartbeatAt": "2023-08-25T18:45:23.660942",
+    "startedAt": "2023-08-25T18:45:21.607971",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--artifact_name",
+        "exercise_1/zen_of_python:v1"
+    ],
+    "state": "running",
+    "program": "use_artifact.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py",
+    "git": {
+        "remote": "https://github.com/udacity/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "f8ceef1ef5f8d5e8ac5995dbf09d0c6d8be15827"
+    },
+    "email": "abdelkarim.eljandoubi@ensta-paris.fr",
+    "root": "/home/a/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "ABDELKARIM",
+    "username": "a",
+    "executable": "/home/a/anaconda3/envs/udacity/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2496.002,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2496.002,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.98248672485352,
+        "used": 13.850994110107422
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.46023941040039
+    }
+}

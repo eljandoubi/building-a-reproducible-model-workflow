@@ -1,0 +1,7 @@
+2023-08-27 00:49:53,549 Downloading artifact
+2023-08-27 00:49:54,504 Performing t-SNE
+/home/a/anaconda3/envs/mlflow-5107c3ceeed51a119857f38c7009f23169e976e1/lib/python3.11/site-packages/seaborn/axisgrid.py:118: UserWarning: The figure layout has changed to tight
+  self._figure.tight_layout(*args, **kwargs)
+2023-08-27 00:49:58,537 Uploading image to W&B
+2023-08-27 00:49:58,937 Creating artifact
+2023-08-27 00:49:58,942 Logging artifact

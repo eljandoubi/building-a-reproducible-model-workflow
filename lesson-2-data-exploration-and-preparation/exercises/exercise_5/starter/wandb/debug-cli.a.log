@@ -1,0 +1,26 @@
+2023-08-28 00:48:39 ERROR Traceback (most recent call last):
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/apis/public.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 286, in _from_name
+    raise ValueError(
+ValueError: Unable to fetch artifact with name abdelkarim-eljandoubi/exercise_5/preprocessed_data.csv:latest
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/cli/cli.py", line 2144, in get
+    artifact = public_api.artifact(full_path, type=type)
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/apis/public.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/a/anaconda3/envs/udacity/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 286, in _from_name
+    raise ValueError(
+wandb.errors.CommError: Unable to fetch artifact with name abdelkarim-eljandoubi/exercise_5/preprocessed_data.csv:latest
+

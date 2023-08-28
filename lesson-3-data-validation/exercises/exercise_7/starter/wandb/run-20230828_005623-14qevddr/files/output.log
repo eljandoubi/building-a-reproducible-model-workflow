@@ -1,0 +1,5 @@
+[1mcollecting 3 items                                                             [0m[1mcollected 3 items                                                              [0m
+
+test_data.py::test_column_presence_and_type [32mPASSED[0m
+test_data.py::test_class_names [32mPASSED[0m
+test_data.py::test_column_ranges [32mPASSED[0m

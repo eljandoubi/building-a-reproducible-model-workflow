@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/68a0bc116b0f43da8e014959fc3d503a/artifacts
+end_time: 1693090206303
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 68a0bc116b0f43da8e014959fc3d503a
+run_name: masked-ray-315
+run_uuid: 68a0bc116b0f43da8e014959fc3d503a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693089670331
+status: 3
+tags: []
+user_id: a

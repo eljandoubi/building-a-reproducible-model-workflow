@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/1bb409fb140846aba67ed441b91860a9/artifacts
+end_time: 1693090206426
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1bb409fb140846aba67ed441b91860a9
+run_name: beautiful-dog-175
+run_uuid: 1bb409fb140846aba67ed441b91860a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693088586471
+status: 3
+tags: []
+user_id: a

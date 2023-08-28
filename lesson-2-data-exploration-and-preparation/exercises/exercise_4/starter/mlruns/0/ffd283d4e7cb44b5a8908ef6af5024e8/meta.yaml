@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/mlruns/0/ffd283d4e7cb44b5a8908ef6af5024e8/artifacts
+end_time: 1693168909795
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ffd283d4e7cb44b5a8908ef6af5024e8
+run_name: learned-kite-8
+run_uuid: ffd283d4e7cb44b5a8908ef6af5024e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693167964208
+status: 3
+tags: []
+user_id: a

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_7/starter/mlruns/0/d1d8146d594048608e9ccc0a7a590b82/artifacts
+end_time: 1693169777333
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d1d8146d594048608e9ccc0a7a590b82
+run_name: exultant-grouse-466
+run_uuid: d1d8146d594048608e9ccc0a7a590b82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693169577635
+status: 4
+tags: []
+user_id: a

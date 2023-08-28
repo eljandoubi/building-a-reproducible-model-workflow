@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/e79bcfca97dc41789509b830ff9046fe/artifacts
+end_time: 1693124996426
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e79bcfca97dc41789509b830ff9046fe
+run_name: dashing-shoat-427
+run_uuid: e79bcfca97dc41789509b830ff9046fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693124527031
+status: 3
+tags: []
+user_id: a
