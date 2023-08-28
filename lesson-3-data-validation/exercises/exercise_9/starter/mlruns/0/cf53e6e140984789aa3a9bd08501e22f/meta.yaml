@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_9/starter/mlruns/0/cf53e6e140984789aa3a9bd08501e22f/artifacts
+end_time: 1693240712409
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cf53e6e140984789aa3a9bd08501e22f
+run_name: fun-robin-357
+run_uuid: cf53e6e140984789aa3a9bd08501e22f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693240645415
+status: 4
+tags: []
+user_id: a

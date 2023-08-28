@@ -1,0 +1,7 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.17, pytest-6.2.2, py-1.11.0, pluggy-0.13.1 -- /home/a/anaconda3/envs/mlflow-522b3974b8f741e896a413b4216e975c1a2bf346/bin/python
+cachedir: .pytest_cache
+rootdir: /home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_9/starter
+collecting ... collected 1 item
+
+test_data.py::test_kolmogorov_smirnov PASSED

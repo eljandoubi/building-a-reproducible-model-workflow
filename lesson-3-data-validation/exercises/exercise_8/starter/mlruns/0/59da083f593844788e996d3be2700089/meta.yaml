@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_8/starter/mlruns/0/59da083f593844788e996d3be2700089/artifacts
+end_time: 1693236779992
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 59da083f593844788e996d3be2700089
+run_name: selective-cow-593
+run_uuid: 59da083f593844788e996d3be2700089
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693236711637
+status: 3
+tags: []
+user_id: a

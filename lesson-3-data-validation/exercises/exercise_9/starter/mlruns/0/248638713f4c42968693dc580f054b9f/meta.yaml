@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_9/starter/mlruns/0/248638713f4c42968693dc580f054b9f/artifacts
+end_time: 1693240551747
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 248638713f4c42968693dc580f054b9f
+run_name: resilient-mink-849
+run_uuid: 248638713f4c42968693dc580f054b9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693240485354
+status: 3
+tags: []
+user_id: a
