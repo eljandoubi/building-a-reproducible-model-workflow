@@ -108,6 +108,7 @@ def export_model(run, pipe, X_val, val_pred, export_artifact):
             type="model_export",
             description="Random Forest pipeline export",
         )
+        
         artifact.add_dir(export_path)
 
         run.log_artifact(artifact)
