@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_11/starter/mlruns/0/083fb38ac7a4491e80f32899091556c4/artifacts
+end_time: 1693305935953
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 083fb38ac7a4491e80f32899091556c4
+run_name: welcoming-moose-43
+run_uuid: 083fb38ac7a4491e80f32899091556c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693305593369
+status: 3
+tags: []
+user_id: a

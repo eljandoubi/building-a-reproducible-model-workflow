@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_11/starter/mlruns/0/fbf1bcd3829f4b1c957e28ad87183934/artifacts
+end_time: 1693303658087
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fbf1bcd3829f4b1c957e28ad87183934
+run_name: upbeat-whale-632
+run_uuid: fbf1bcd3829f4b1c957e28ad87183934
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693303592882
+status: 4
+tags: []
+user_id: a
