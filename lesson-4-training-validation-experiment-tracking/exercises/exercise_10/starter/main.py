@@ -23,7 +23,7 @@ def go(config: DictConfig):
     with open(model_config, "w+") as fp:
         json.dump(dict(config["random_forest"]), fp)
 
-    _ = mlflow.run(
+    mlflow.run(
         os.path.join(root_path, "random_forest"),
         "main",
         parameters={

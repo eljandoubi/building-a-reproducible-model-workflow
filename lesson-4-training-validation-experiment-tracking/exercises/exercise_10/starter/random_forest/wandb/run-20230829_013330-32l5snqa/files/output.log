@@ -1,0 +1,14 @@
+2023-08-29 01:33:32,832 Downloading and reading train artifact
+2023-08-29 01:33:33,859 Extracting target from dataframe
+2023-08-29 01:33:33,868 Splitting train/val
+2023-08-29 01:33:33,893 Setting up pipeline
+Traceback (most recent call last):
+  File "run.py", line 210, in <module>
+    go(args)
+  File "run.py", line 43, in go
+    pipe = get_inference_pipeline(args)
+  File "run.py", line 176, in get_inference_pipeline
+    ("classifier", RandomForestClassifier(**model_config))
+  File "/home/a/anaconda3/envs/mlflow-5c4c5497669a87a27d7b51b14f5eb7cda6717fd0/lib/python3.8/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'main'
