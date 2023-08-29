@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.17",
+    "heartbeatAt": "2023-08-29T13:33:17.663157",
+    "startedAt": "2023-08-29T13:33:16.866779",
+    "docker": null,
+    "cpu_count": 32,
+    "cuda": null,
+    "args": [
+        "--model_export",
+        "exercise_12/model_export:latest",
+        "--test_data",
+        "exercise_6/data_test.csv:latest"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "lesson-4-training-validation-experiment-tracking/exercises/exercise_13/starter/run.py",
+    "git": {
+        "remote": "https://github.com/eljandoubi/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "98f26b1bd60aa37bd7e66f6c7643100ddb56ce54"
+    },
+    "email": "abdelkarim.eljandoubi@ensta-paris.fr",
+    "root": "/home/a/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "DESKTOP-LF0LD60",
+    "username": "a",
+    "executable": "/home/a/anaconda3/envs/mlflow-58cf06adc66be3fb7d26e259131e04cbc6898506/bin/python"
+}
