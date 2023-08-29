@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.17",
+    "heartbeatAt": "2023-08-29T08:58:05.789282",
+    "startedAt": "2023-08-29T08:58:05.034627",
+    "docker": null,
+    "cpu_count": 32,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "exercise_6/data_train.csv:latest",
+        "--model_config",
+        "/home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_10/starter/outputs/2023-08-29/10-53-19/random_forest_config.json"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "lesson-4-training-validation-experiment-tracking/exercises/exercise_10/starter/random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/eljandoubi/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "7a7a69b6286bbf8de09593d34331d646c6803555"
+    },
+    "email": "abdelkarim.eljandoubi@ensta-paris.fr",
+    "root": "/home/a/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "DESKTOP-LF0LD60",
+    "username": "a",
+    "executable": "/home/a/anaconda3/envs/mlflow-5c4c5497669a87a27d7b51b14f5eb7cda6717fd0/bin/python"
+}
