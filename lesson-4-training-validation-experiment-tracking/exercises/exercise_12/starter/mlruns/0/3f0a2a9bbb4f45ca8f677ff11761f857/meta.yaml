@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_12/starter/mlruns/0/3f0a2a9bbb4f45ca8f677ff11761f857/artifacts
+end_time: 1693314274665
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3f0a2a9bbb4f45ca8f677ff11761f857
+run_name: wistful-croc-16
+run_uuid: 3f0a2a9bbb4f45ca8f677ff11761f857
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693313797476
+status: 3
+tags: []
+user_id: a

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_12/starter/mlruns/0/e2c58079661f404cad49dd72f1fca26f/artifacts
+end_time: 1693313723548
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e2c58079661f404cad49dd72f1fca26f
+run_name: nosy-ant-301
+run_uuid: e2c58079661f404cad49dd72f1fca26f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693313272080
+status: 4
+tags: []
+user_id: a

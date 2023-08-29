@@ -1,0 +1,15 @@
+artifact_uri: file:///home/a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_12/starter/mlruns/0/9ef2de35aa7540ce9a402f9f79d066ea/artifacts
+end_time: 1693313212294
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9ef2de35aa7540ce9a402f9f79d066ea
+run_name: capricious-stag-536
+run_uuid: 9ef2de35aa7540ce9a402f9f79d066ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693312630209
+status: 4
+tags: []
+user_id: a
